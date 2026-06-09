@@ -1,6 +1,8 @@
 'use client';
 import './styleProjectCards.css';
 import { ScrollAnimation } from "../uilayouts/scroll-animation";
+import { Link } from 'react-router-dom';
+
 
 function ProjectCard({
   thumbnail,
@@ -10,6 +12,7 @@ function ProjectCard({
   tags,
   delay = 0,
   reversed = false,
+  slug
 }: {
   thumbnail: string;
   type: 'research' | 'tool' | 'visualization';
@@ -18,12 +21,11 @@ function ProjectCard({
   tags: string[];
   delay?: number;
   reversed?: boolean;
+  slug: string;
 }) {
   return (
     <ScrollAnimation animation="fade-up" duration={1} delay={delay}>
-      <div
-        className={`project-card  w-full text-left`}
-      >
+      <Link to={`/${slug}`} className={`project-card  w-full text-left`}>
        {reversed == false && <img src={`${import.meta.env.BASE_URL}${thumbnail}`} alt={title} />}
 
 
@@ -31,7 +33,7 @@ function ProjectCard({
           <h3 className="text-sm tracking-[0.7em] uppercase text-purple-500 font-bold">
             {type.toUpperCase()}
           </h3>
-          <h2 className="text-2xl font-bold project-copy-title">{title}</h2>
+          <h2 className="project-copy-title">{title.toUpperCase()}</h2>
 
           <p className="description project-description ">{description}</p>
           {tags.length > 0 && (
@@ -46,7 +48,7 @@ function ProjectCard({
         </div>
 
         {reversed && <img src={`${import.meta.env.BASE_URL}${thumbnail}`} alt={title} />}
-      </div>
+      </Link>
     </ScrollAnimation>
   );
 }

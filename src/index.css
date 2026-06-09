@@ -35,7 +35,7 @@
   --mono: ui-monospace, Consolas, monospace;
   --subtitle: 'IBM Plex Mono', system-ui, 'Segoe UI', Roboto, sans-serif;
   --section-title: 'Michroma', system-ui, 'Segoe UI', Roboto, sans-serif;
-  --copy-title: 'Sora', system-ui, 'Segoe UI', Roboto, sans-serif;
+  --copy-title: 'Michroma', system-ui, 'Segoe UI', Roboto, sans-serif;
 
   font: 18px/145% var(--sans);
   letter-spacing: 0.18px;
@@ -110,16 +110,7 @@ h1 {
   }
 }
 /* Hero liquid glass title */
-.hero-title {
-  color: transparent;
-  background: var(--title-gradient);
-  -webkit-background-clip: text;
-  background-clip: text;
-  letter-spacing: -5px;
-  font-weight: 900;
-  font-size: 9.5rem;
-  line-height: 1;
-}
+
 
 h2 {
   font-size: 24px;
@@ -171,7 +162,7 @@ section {
 
 
 
-/* Make section headings slightly sticky for context */
+
 
 
 .section-title {
@@ -180,7 +171,7 @@ section {
   -webkit-background-clip: text;
   background-clip: text;
   text-shadow: 0 0 24px rgba(34, 211, 238, 0.12);
-    font-size: 5.5rem;
+    font-size: 10vh;
   font-family: var(--section-title) ;
   font-weight: 900; 
 }
@@ -199,16 +190,7 @@ section {
   scroll-snap-align: start;
 }
 
-.hero-subtitle {
-  font-family: var(--subtitle);
-  color: transparent;
-  background: var(--subtitle-gradient);
-  -webkit-background-clip: text;
-  background-clip: text;
-  font-size: 1rem;
-  line-height: 150%;
-  font-weight: 500;
-}
+
 
 .description {
   font-size: 1.125rem;
@@ -218,10 +200,20 @@ section {
 }
 
 .eyebrow {
-  font-family: var(--subtitle);
-  color: var(--accent);
-  text-transform: uppercase;
-  font-size: 0.85rem;
-  letter-spacing: 0.18em;
-  margin-bottom: 0.5rem;
+  font-size: 0.875rem; /* text-sm */
+  letter-spacing: 0.7em;
+  text-transform: uppercase; 
+  color: #a855f7; 
+  font-weight: 700;
+}
+
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 6vh;
+  }
+
+  .scroll-section {
+    padding: 1.25rem 1.25rem;
+  }
+
 }

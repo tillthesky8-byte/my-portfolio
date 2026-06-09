@@ -11,7 +11,7 @@ function Background() {
           }}
           lazyLoad={undefined}
           fov={undefined}
-          pixelDensity={1}
+          pixelDensity={1.5}
           pointerEvents='none'
         >
           <ShaderGradient

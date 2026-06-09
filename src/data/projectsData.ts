@@ -10,16 +10,16 @@ export type ProjectCard = {
 
 export const projectsCards: ProjectCard[] = [
     {
-        slug: 'quantitative-research-execution-unit',
+        slug: 'qreu',
         type: 'tool',
         title: 'Quantitative Research Execution Unit',
         subtitle: 'Subtitle for Quantitative Research Execution Unit',
         description: 'Often i faced a problem of needing to backtest a strategy on historical data. Manual work was tedious and error-prone, therefore this is automated solution for this. This project is a high-performance, event-driven trading simulation and backtesting framework built in modern .NET (C#). It evaluates trading strategies against historical price behaviors and custom external factors using an ultra-low-memory data streaming approach. The strategy design in this framework is based on "strategy-families", which reduces the time spent on implementing and debugging new strategies.',
-        tags: ['C#', 'SQL', 'DuckDB', 'ASP.NET', 'React', 'Lightweight Charts, xUnit'],
+        tags: ['C#', 'SQL', 'DuckDB', 'ASP.NET', 'React', 'Lightweight Charts', 'xUnit'],
         thumbnail: 'qreu_studio.png',
     },
     {
-        slug: 'psychological-burden-index',
+        slug: 'pb-index',
         type: 'research',
         title: 'Psychological Burden Index',
         subtitle: 'Subtitle for Psychological Burden Index',
@@ -28,7 +28,7 @@ export const projectsCards: ProjectCard[] = [
         thumbnail: 'fit.png',
     },
     {
-        slug: 'oracle-fin-analysis',
+        slug: 'oracle-analysis',
         type: 'research',
         title: 'Oracle Financial Analysis',
         subtitle: 'Subtitle for Oracle Financial Analysis',

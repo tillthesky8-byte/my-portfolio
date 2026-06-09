@@ -10,9 +10,7 @@
 }
 
 #projects-section-title {
-    
-    margin: 0 8rem;
-    font-size: 3.5rem;
+    font-size: 6.5vh;
     line-height: 1.2;
     writing-mode: vertical-rl;
     text-orientation: upright;
@@ -20,7 +18,25 @@
 
 .project-section {
     align-items: center;
+    justify-items: center;
     display: grid;
     grid-template-columns: 0.3fr 1fr;
     grid-template-rows: 1fr;
+}
+
+@media (max-width: 768px) {
+    .project-section {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+    }
+
+    #projects-section-title {
+        writing-mode: horizontal-tb;
+        text-orientation: initial;
+        font-size: 4.5vh;
+    }
+
+    .projects-list {
+        max-height: 90vh;
+    }
 }
