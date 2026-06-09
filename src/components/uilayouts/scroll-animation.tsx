@@ -1,7 +1,7 @@
 'use client';
 
 import { cn } from '../../lib/utils';
-import { HTMLMotionProps, motion } from 'motion/react';
+import { motion } from 'motion/react';
 import type React from 'react';
 
 type Direction = 'up' | 'down' | 'left' | 'right';

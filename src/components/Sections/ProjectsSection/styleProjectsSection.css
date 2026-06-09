@@ -1,0 +1,26 @@
+.projects-list {
+    width: 100%;
+    max-height: 100vh;
+    overflow-y: auto;
+}
+.projects-list > *:not(:last-child) {
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+#projects-section-title {
+    
+    margin: 0 8rem;
+    font-size: 3.5rem;
+    line-height: 1.2;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+}
+
+.project-section {
+    align-items: center;
+    display: grid;
+    grid-template-columns: 0.3fr 1fr;
+    grid-template-rows: 1fr;
+}
