@@ -24,7 +24,7 @@ function ProjectCard({
       <div
         className={`project-card  w-full text-left`}
       >
-       {reversed == false && <img src={`/${thumbnail}`} alt={title} />}
+       {reversed == false && <img src={`${import.meta.env.BASE_URL}${thumbnail}`} alt={title} />}
 
 
         <div className="project-copy">
@@ -45,7 +45,7 @@ function ProjectCard({
           )}
         </div>
 
-        {reversed && <img src={`/${thumbnail}`} alt={title} />}
+        {reversed && <img src={`${import.meta.env.BASE_URL}${thumbnail}`} alt={title} />}
       </div>
     </ScrollAnimation>
   );
